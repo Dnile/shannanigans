@@ -1,4 +1,4 @@
 shannanigans
 ============
 
-provate challanges etc.
+private challanges etc.
