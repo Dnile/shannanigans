@@ -25,7 +25,7 @@ class Challange:
 
         self.numbers.pop(randomized - 1)
         
-        print "the random array posses the following members:", self.numbers
+        print "the random array contains the following members:", self.numbers
         print "random range ran {0:s} times".format(str(rand_count))
 
     def find_missing_number(self):
