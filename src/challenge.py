@@ -7,7 +7,7 @@ class Challange:
         self.numbers = list()
         self.random_vals = dict()
 
-    def do_things(self):
+    def gen_random_array(self):
 
         randomized = 0
         rand_count = 0
@@ -24,8 +24,9 @@ class Challange:
 
 
         self.numbers.pop(randomized - 1)
-        print len(self.numbers)
-        print rand_count
+        
+        print "the random array posses the following members:", self.numbers
+        print "random range ran {0:s} times".format(str(rand_count))
 
     def find_missing_number(self):
 
@@ -45,21 +46,21 @@ class Challange:
 
         missing_num = total - sum
 
-        print missing_num
+        print "the missing number is: {0:s}".format(str(missing_num))
 
 
 
-# the total sum of numbers between 1 and arr.length.
+
+def main():
+
+    etgar = Challange()
+
+    etgar.gen_random_array()
+
+    etgar.find_missing_number()
 
 
-
-etgar = Challange()
-
-etgar.do_things()
-
-etgar.find_missing_number()
-
-
-
+if __name__=="__main__":
+    main()
 
 
